@@ -1,0 +1,92 @@
+pipeline{
+    agent any
+    stages{
+        stage("sample for testing "){
+
+            steps{
+                sh " echo hello world !! it is running "
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pipeline{
+//     agent any
+
+//     stages{
+//         stage("build"){
+//             steps{
+//                     withCredentials([usernamePassword(credentialsId:'docker-repo' , usernameVariable:'user' , passwordVariable:'pass')]){
+//                         sh " docker login -u $user -p $pass "
+//                     }
+                        
+                    
+//                     sh " bash arg.sh"
+//             }
+//         }
+//         stage("test"){
+//             steps{
+//                 sh "docker images"
+//             }
+//         }
+//     }
+// }
